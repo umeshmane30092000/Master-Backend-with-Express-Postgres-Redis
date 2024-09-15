@@ -15,6 +15,6 @@ router.post("/auth/login", AuthController.login);
 
 
 router.get("/profile", authMiddleware, ProfileController.index);
-
+router.put("/profile/:id", authMiddleware, ProfileController.update);// put-update method
 
 export default router;
